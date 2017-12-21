@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css" />
+		<link rel='stylesheet' href='/stylesheets/admin.css' />
+	</head>
+
+	<body>
+		<div class="container admin-h4">
+			<nav class="navbar navbar-default">
+				<h4 class="navbar-text"><%= title %>后台控制页面</h4>
+			</nav>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title admin-title">新闻发布器</h3>
+						</div>
+						<form class="admin-form">
+							<div class="form-group">
+								<label for="newsTitle">新闻标题</label>
+								<input type="text" class="form-control" id="newsTitle" placeholder="请输入新闻标题">
+							</div>
+							<div class="form-group">
+								<label for="pictureLink">新闻图片地址</label>
+								<input type="text" class="form-control" id="pictureLink" placeholder="请输入图片链接地址">
+							</div>
+							<div class="form-group">
+								<label for="newsSource">新闻来源</label>
+								<input type="text" class="form-control" id="newsSource" placeholder="请输入新闻来源">
+							</div>
+							<div class="form-group">
+								<label for="newsDate">新闻日期</label>
+								<input type="date" class="form-control" id="newsDate" placeholder="请输入新闻日期">
+							</div>
+							<div class="form-group">
+								<label for="newsType">新闻类型</label>
+								<select class="form-control" id="newsType">
+									<option>推荐</option>
+									<option>百家</option>
+									<option>本地</option>
+									<option>娱乐</option>
+									<option>社会</option>
+									<option>军事</option>
+									<option>女人</option>
+									<option>搞笑</option>
+									<option>互联网</option>
+									<option>科技</option>
+									<option>生活</option>
+									<option>国际</option>
+									<option>国内</option>
+									<option>体育</option>
+									<option>汽车</option>
+									<option>财经</option>
+									<option>房产</option>
+									<option>时尚</option>
+									<option>教育</option>
+									<option>游戏</option>
+									<option>旅游</option>
+									<option>人文</option>
+								</select>
+								<!--<input type="text" class="form-control"  placeholder="请输入新闻类型">-->
+							</div>
+
+							<button class="btn btn-default" id="tijiao">添加/更新</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">新闻列表</h3>
+						</div>
+						<div class="list-group-item active newsList">
+							<span class="col-md-1">ID</span>
+							<span class="col-md-2">新闻类型</span>
+							<span class="col-md-4">新闻标题</span>
+							<span class="col-md-3">新闻时间</span>
+							<span class="col-md-2">操作</span>
+						</div>
+						<div class="list-group" id="content">
+
+							<!--<a href="#" class="list-group-item newsListA">
+								<span class="col-md-2">1</span>
+								<span class="col-md-4">新闻标题</span>
+								<span class="col-md-4">新闻时间</span>
+								<span class="col-md-2"><button>删除</button></span>
+							</a>							-->
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</body>
+	<script src="jquery/dist/jquery.min.js"></script>
+	<script src="/javascripts/admin.js"></script>
+</html>

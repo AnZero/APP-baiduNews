@@ -1,0 +1,36 @@
+.admin-h4 {
+	margin-top: 80px;
+}
+
+.admin-form {
+	padding: 15px;
+}
+
+.admin-title {
+	font-weight: bold;
+}
+
+.newsList {
+	height: 40px;
+}
+
+.newsListA {
+	height: 80px;
+}
+
+.newsListA>span:nth-of-type(3) {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+
+}
+
+.newsListA>span:nth-of-type(2){
+	
+	text-align: center;
+}
+#content{
+	height: 395px;
+	overflow-y: scroll;
+}

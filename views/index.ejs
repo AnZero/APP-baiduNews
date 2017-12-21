@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<title>
+		</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css" />
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+		<link rel="stylesheet/less" type="text/css" href="/stylesheets/index.less" />
+		<link rel="stylesheet" type="text/css" href="/stylesheets/swiper.min.css" />
+		<script src="less/dist/less.min.js" type="text/javascript"></script>
+		<style>
+			.con1>.newsHeader{
+				position: relative;
+			}
+			.con1>.newsHeader>p{
+				position: absolute;
+				top: 15px;
+				left: 97px;
+				font-size: 12px;
+				color: #fff;
+				width: 80px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container-fluit con1">
+			<div class="newsHeader">
+				<span></span>
+				<span id="newsDeng"></span>
+				<span></span>
+				<span></span>
+				<p id="dengluP">
+					<%if(typeof users !== 'undefined' && users){%>
+					<%= users.username %>
+				<%}else{%>
+					请登录
+				<%}%>
+					</p>
+			</div>
+			<p class="P-1"></p>
+			<p class="P-2"></p>
+			<div class="swiper-container swiper-1">
+				<div class="swiper-wrapper" id="newsNav">
+					<a href="#" class="swiper-slide newsActive">推荐</a>
+					<a href="#" class="swiper-slide">百家</a>
+					<a href="#" class="swiper-slide">本地</a>
+					<a href="#" class="swiper-slide">娱乐</a>
+					<a href="#" class="swiper-slide">社会</a>
+					<a href="#" class="swiper-slide">军事</a>
+					<a href="#" class="swiper-slide">女人</a>
+					<a href="#" class="swiper-slide">搞笑</a>
+					<a href="#" class="swiper-slide">互联网</a>
+					<a href="#" class="swiper-slide">科技</a>
+					<a href="#" class="swiper-slide">生活</a>
+					<a href="#" class="swiper-slide">国际</a>
+					<a href="#" class="swiper-slide">国内</a>
+					<a href="#" class="swiper-slide">体育</a>
+					<a href="#" class="swiper-slide">汽车</a>
+					<a href="#" class="swiper-slide">财经</a>
+					<a href="#" class="swiper-slide">房产</a>
+					<a href="#" class="swiper-slide">时尚</a>
+					<a href="#" class="swiper-slide">教育</a>
+					<a href="#" class="swiper-slide">游戏</a>
+					<a href="#" class="swiper-slide">旅游</a>
+					<a href="#" class="swiper-slide">人文</a>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluit con2">
+
+			<div class="swiper-container swiper-2" id="lunBoTu-type">
+				<div class="swiper-wrapper" id="newsLunbo">
+					<div class="swiper-slide"><img src="/images/tuijian1.jpg" /><p>南城高铁车厢变T台</p></div>
+					<div class="swiper-slide"><img src="/images/tuijian2.jpg" /><p>采莲人在冰冷水中操作</p></div>
+					<div class="swiper-slide"><img src="/images/tuijian3.jpg" /><p>C罗夺冠！</p></div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12" id="shuju-news">
+					<dl>
+						<dt><img src="http://img.hb.aicdn.com/3cfd450837f037260f2013d4e39e599e376b570634214-NVrLtr_fw658"/></dt>
+						<dd>老城</dd>
+						<dd>百度</dd>
+						<dd>2017-11-30</dd>
+					</dl>
+					<dl>
+						<dt><img src="http://img.hb.aicdn.com/2d2b0a965dbbc1093359f1a9edf3bf21c29d281a4f982-sjtnQp_fw658"/></dt>
+						<dd>原画联盟-原画师互动平台</dd>
+						<dd>蔡文姬</dd>
+						<dd>2017-12-11</dd>
+					</dl>
+					<dl>
+						<dt><img src="http://img.hb.aicdn.com/5b0005b831f060d53f797b809c480f1142c6773547cb7-J289Sx_fw658"/></dt>
+						<dd>仙界</dd>
+						<dd>扁鹊</dd>
+						<dd>2017-11-30</dd>
+					</dl>
+					<dl>
+						<dt><img src="http://img.hb.aicdn.com/667b05474bed55116cc776c3399aeae26acd62811add5c-LT2lK8_fw658"/></dt>
+						<dd>HyperFoil Cruiser - TINKIET, Yohann Schepacz OXAN STUDIO</dd>
+						<dd>Cruiser</dd>
+						<dd>2017-12-6</dd>
+					</dl>
+					<dl>
+						<dt><img src="http://img.hb.aicdn.com/dccfa43348bcad99fcd49d2465bb65516df70921b21e2-6NauIq_fw658"/></dt>
+						<dd>Tao, Winb Hu : Tao by Winb Hu on ArtStation.</dd>
+						<dd>Winb Hu</dd>
+						<dd>2017-11-30</dd>
+					</dl>
+					<dl>
+						<dt><img src="http://img.hb.aicdn.com/eed27ea980379747e3aa6b130ece2c14448f539895b51-duugFj_fw658"/></dt>
+						<dd>Creative_G</dd>
+						<dd>百度</dd>
+						<dd>2017-11-26</dd>
+					</dl>
+				</div>
+			</div>
+
+		</div>
+	</body>
+	<script src="jquery/dist/jquery.min.js"></script>
+	<script src="/javascripts/swiper.min.js"></script>
+	<script src="/javascripts/index.js"></script>
+	<script>
+		$(document).ready(function(){
+//			console.log(users)
+			$('#newsDeng').on('click',function(){
+				window.location.href = 'http://localhost:3000/login'
+			})
+			function fn2(){
+				if(typeof username !== 'undefined' && users){
+					$('#dengluP').html(username);
+				}else{
+					$('#dengluP').html('请登录');
+				}
+			}
+//			fn2()
+		})
+	</script>
+</html>

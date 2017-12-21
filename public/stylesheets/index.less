@@ -1,0 +1,156 @@
+//定义变量
+@color: #3e98f0;
+.newsHeader {
+    width: 100%;
+    height: 48px;
+    background: @color url(../images/bg-news-logo.png) no-repeat;
+    background-position: center 10px;
+    background-size: 65px auto;
+    span {
+        background: url(../images/icon-bg.png) no-repeat;
+        background-size: 40px 500px;
+        width: 34px;
+        float: left;
+        height: 100%;
+        background-position: center 6px;
+        margin-left: 15px;
+    }
+    span:nth-of-type(2) {
+        background-position: center -461px;
+    }
+    span:nth-of-type(3) {
+        margin-left: 182px;
+        background-position: center -105px;
+    }
+    span:nth-of-type(4) {
+        background-position: center -160px;
+    }
+}
+
+.swiper-1 {
+    width: 100%;
+    height: 40px;
+    background: @color;
+    div {
+        a {
+            margin: 0 16px;
+            width: auto;
+            text-align: center;
+            line-height: 40px;
+            color: #c2daf8;
+        }
+        .newsActive {
+            color: #fff;
+            border-bottom: 2px solid #fff;
+            height: 39px;
+            line-height: 41px;
+            text-decoration: none;
+        }
+    }
+}
+
+.con1 {
+    height: 88px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 3;
+    p {
+        position: fixed;
+        top: 48px;
+        width: 30px;
+        height: 38px;
+        z-index: 2;
+    }
+    .P-1 {
+        left: 0;
+        background-image: linear-gradient(to right, #3e98f0 0, rgba(62, 152, 240, 0) 100%);
+    }
+    .P-2 {
+        right: 0;
+        background-image: linear-gradient(to left, #3e98f0 0, rgba(62, 152, 240, 0) 100%);
+    }
+}
+
+.con2 {
+    margin-top: 88px;
+    height: auto;
+    
+    .swiper-2 {
+        height: 187px;
+        .swiper-slide{
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            p{
+                position: absolute;
+                left: 10px;
+                bottom: 0;
+                font-size: 18px;
+                color: #fff;
+                font-family: arial,sans-serif;
+                
+            }
+        }
+        .swiper-pagination {
+            text-align: right;
+            span:nth-of-type(3){
+                margin-right: 15px !important;
+            }
+            .swiper-pagination-bullet {
+                height: 2px;
+                width: 2px;
+                background: #fff;
+                opacity: 1;
+                position: relative;
+                top: -2px;
+                margin: 0 3px !important;
+            }
+            .swiper-pagination-bullet-active {
+                height: 4px;
+                width: 4px;
+                border-radius: 50%;
+                background: #fff;
+            }
+        }
+    }
+    dl {
+        height: 75px;
+        margin: 20px 0;
+        dt {
+            width: 33%;
+            float: left;
+            margin: 0 20px;
+            img {
+                width: 100%;
+                height: 75px;
+            }
+        }
+        dd {
+            float: left;
+            width: 50%;
+        }
+        dd:nth-of-type(1) {
+            font-size: 18px;
+            color: #333;
+            line-height: 26px;
+            height: 52px;
+            overflow: hidden;
+        }
+        dd:nth-of-type(2) {
+            color: #999;
+            font-size: 13px;
+            width: 30%;
+            overflow: hidden;
+        }
+        dd:nth-of-type(3) {
+            color: #999;
+            font-size: 13px;
+            width: 20%;
+        }
+    }
+}
